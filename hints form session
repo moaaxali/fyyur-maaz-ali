@@ -1,0 +1,14 @@
+distinct_venues_cities = Venue.query.distinct(Venue.city)
+
+  except Exception as e:
+
+
+artist.artist_id = request.form.get('artist_id','')
+
+artist.genres= json.dumps( request.form.getlist('genres'))
+
+genres= json.loads(venue.genres)
+
+#Make model to string instead of pckle type
+
+
