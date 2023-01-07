@@ -10,14 +10,14 @@ from logging import Formatter, FileHandler
 from flask_wtf import Form
 from forms import *
 import sys
+from models import db
+from models import Artist, Venue, Show
 
 app = Flask(__name__)
 moment = Moment(app)
 app.config.from_object('config')
-db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-from models import Artist, Venue, Show
 #----------------------------------------------------------------------------#
 # Filters.
 #----------------------------------------------------------------------------#
